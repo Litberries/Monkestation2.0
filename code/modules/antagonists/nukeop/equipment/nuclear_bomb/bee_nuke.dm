@@ -65,7 +65,7 @@
 /obj/machinery/nuclearbomb/bee/proc/local_foam()
 	var/datum/reagents/tmp_holder = new(1000)
 	tmp_holder.my_atom = src
-	tmp_holder.add_reagent(flood_reagent, 100)
+	tmp_holder.add_reagent(flood_reagents, 100)
 
 	var/datum/effect_system/fluid_spread/foam/foam = new
 	foam.set_up(200, holder = src, location = get_turf(src), carry = tmp_holder)
@@ -82,6 +82,6 @@
 /obj/machinery/nuclearbomb/bee/proc/on_created_round_event(datum/round_event_control/source_event_control, datum/round_event/scrubber_overflow/every_vent/created_event)
 	SIGNAL_HANDLER
 	UnregisterSignal(overflow_control, COMSIG_CREATED_ROUND_EVENT)
-	created_event.forced_reagent_type = flood_reagent
+	created_event.forced_reagent_type = flood_reagents
 
 
