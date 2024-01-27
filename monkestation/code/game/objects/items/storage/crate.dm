@@ -185,7 +185,11 @@
 			new /obj/item/toy/plush/ratplush(src)
 			new /obj/item/toy/plush/narplush(src)
 		if(94)
+<<<<<<< HEAD
 			new /obj/machinery/nuclearbomb/bee	 //monkestation edit: replaced /obj/item/clothing/under/misc/syndicate_souvenir(src) with new /obj/machinery/nuclearbomb/bee
+=======
+			new /obj/item/clothing/under/misc/syndicate_souvenir(src)
+>>>>>>> parent of ad2cd86bf48 (Rayne Brand Bee Nuke)
 		if(96)
 			new /mob/living/simple_animal/hostile/asteroid/elite/broodmother_child(src)
 		if(95)
