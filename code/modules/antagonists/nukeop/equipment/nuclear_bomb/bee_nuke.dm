@@ -15,7 +15,7 @@
 	var/datum/round_event_control/scrubber_overflow/every_vent/overflow_control
 
 /obj/machinery/nuclearbomb/bee/Initialize(mapload)
-	return ..()
+	. = ..()
 	keg = new(src)
 	QDEL_NULL(core)
 	overflow_control = locate(/datum/round_event_control/scrubber_overflow/every_vent) in SSevents.control
